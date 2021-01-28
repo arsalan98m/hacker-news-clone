@@ -39,6 +39,6 @@ jobs:
       - name: Installing surge
         run: npm install --global surge
         
-       # deploying to surge
+       # deploying app on surge
       - name: Deploying on surge
         run: surge ./build hacker-news-clone.surge.sh --token ${{ secrets.SURGE_TOKEN }}   
